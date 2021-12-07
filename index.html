@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+    Name: Farah Foco
+    Course: Web application development CS412
+    Assignment: Project 1
+    Due date: 22 October 2021.
+    Purpose: The purpose of this project is to apply HTML knowledge into making a functioning CV.
+
+        -->
+        
+        <meta charset="UTF-8">
+    <title>Project 3 - Farah Foco</title>
+    <link rel="stylesheet" href="index.css">
+    
+    </head>
+
+    <body>
+        <script src= "index.js"></script>
+    <p3 class="center1">
+        <a href="#Get to know me:"> Get to know me:</a> -
+        <a href="#Timeline of my education:"> Timeline of my education:</a> -
+        <a href="#Languages:"> Languages:</a> -
+        <a href="#Hobbies:"> Hobbies:</a> -
+        <a href="#Skill set:"> Skill set:</a> -
+        <a href="#Reach me:"> Reach me:</a>
+    </p3>
+    <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button1").click(function(){
+    $("h1").animate({
+      left: '700px',
+      opacity: '0.5px',
+      height: '100px',
+      width: '150px'
+    });
+  });
+});
+</script> 
+
+<button1 class="button" class="center">Magic in 3...2...1...</button1>
+<h1 style="border: none; height:150px; width:350px;position:sticky; font-family: Lucida Handwriting;
+  color: rgb(206, 27, 27); font-size: 200%;">Life of Farah Fočo</h1>
+
+        
+        <a name="Get to know me:"><h2><li> <strong><u>Get to know me:</u></strong></li></h2></a>
+
+        <p16>Here is my favourite Quote depending on the day of the week! <br></p16>
+        <p16 id="demo15"></p16>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+  day = "Sunday";
+    text = "Life is what happens when you're busy making other plans. -John Lennon";
+    break;
+  case 1:
+    day = "Monday";
+    text = "The way to get started is to quit talking and begin doing. -Walt Disney";
+    break;
+  case 2:
+    day = "Tuesday";
+    text = "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs";
+    break;
+  case 3:
+    day = "Wednesday";
+    text = "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt";
+    break;
+  case 4:
+    day = "Thursday";
+    text = "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey";
+    break;
+  case 5:
+    day = "Friday";
+    text = "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron";
+    break;
+  case  6:
+  day = "Saturday";
+    text = "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela";
+    
+}
+document.getElementById("demo15").innerHTML = day +" - " + text;
+</script>
+
+
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+
+        <script>
+        if (new Date().getHours() < 18) {
+          document.getElementById("demo9").innerHTML = "Good day!";
+        }
+        else{
+            document.getElementById("demo10").innerHTML = "Good Evening!";
+        }
+        </script>
+        <p id="demo4"></p>
+
+        <p class="center"> <b>Hello!</b>  <br>
+            <br>
+        
+            <br>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p10").toggle();
+  });
+});
+</script>
+
+
+<button class="button">Click here to hide/show the About me part </button> <br>
+
+
+<p10>
+  <img src="1634732482682.jpg">
+  <br>
+</p10>
+<p10>My name is Farah Foco, born on 6<sup>th</sup>of April, 2001. I grew up in Old part of town in Sarajevo, near Bascarsija. Since, I can remember I was <br> 
+  interested about school and studying so I decided to start Primary school at age of 5. 
+  Now I am 20 years old and 3<sup>rd</sup>/junior year at IUS. <br> While growing up I had many interests such as volleyball, dancing, balet and many more...</p10>
+
+        <hr>
+         <a name="Timeline of my education:"><h2><li> <strong> <u>Timeline of my education:</u></strong></li></h2></a>
+            <!--
+            <p1><ul type="circle" class="center">
+                <li> Primary school - <em>"Safvet-beg Basagic"</em> (2006-2015)</li>
+                <li> High school - <em>"First Bosniak Gymnasium - Cambridge International High School"</em> (2015-2019)</li>
+                <li> Higher Education - <em>"International University of Sarajevo"</em> (2019-now)<br>
+                    <em> <acronym title="Faculty of Engineering & Natural Sciences">FENS</acronym>, <acronym title="Computer Science & Engineering">CSE</acronym> </em></li>
+            </ul>
+        </p1> -->
+        <p id = "demo5" class="center"> </p>
+        <p id = "demo6" class="center"> </p>
+        <p id = "demo7" class="center"> </p>
+
+        <script>
+            
+            let timeline_of_my_education = {
+            Primary_school:"Safvet-beg Basagic (2006-2015)",
+            High_school: "First Bosniak Gymnasium - Cambridge International High School (2015-2019)",
+            Higher_Education: "International University of Sarajevo (2019-now)"
+        };
+        </script>
+
+<script>
+    document.getElementById("demo5").innerHTML = timeline_of_my_education.Primary_school;
+    document.getElementById("demo6").innerHTML = timeline_of_my_education.High_school;
+    document.getElementById("demo7").innerHTML = timeline_of_my_education.Higher_Education;
+    </script>
+    
+       
+        <hr>
+        
+        <a name="Languages:"><h2><li> <strong> <u>Languages:</u> </strong></li></h2> </a>
+        <p2> 
+      <!----  <ol class="center">
+            <li> Mother Tongue - Bosnian (speaking, writting: Full professional proficiency);</li>
+            <li> Language  - English (speaking, writting: Full professional proficiency);</li>
+            <li> Language - German (speaking, writting: Limited proficiency);</li>
+            <li> Language - Turkish (speaking, writting:Limited proficiency).</li>
+        </ol> -->
+        <p id="demo" class="center"></p> 
+        <p id="demo1" class="center"></p> 
+        <p id="demo2" class="center"></p> 
+        <p id="demo3" class="center"></p>
+
+        <script>
+        let Mother_Tongue = "Bosnian (speaking, writting: Full professional proficiency)";
+        let Language1  = "English (speaking, writting: Full professional proficiency)";
+        let Language2 = "German (speaking, writting: Limited proficiency)";
+        let Language3 = "Turkish (speaking, writting:Limited proficiency)";
+        document.getElementById("demo").innerHTML = Mother_Tongue;
+        document.getElementById("demo1").innerHTML = Language1;
+        document.getElementById("demo2").innerHTML = Language2;
+        document.getElementById("demo3").innerHTML = Language3;
+
+        </script>
+
+        </p2>
+        
+        <hr>
+
+        <a name="Hobbies:"><h2><li> <strong> <u>Hobbies:</u></strong></li></h2></a>
+       <p4>
+           <table class="center">
+        <tr>
+          
+        
+          <td colspan="2">Dance Types I know</td>
+          
+        </tr>
+        <tr>
+            <td>Street dance</td>
+            <td>Hip-hop</td>
+            
+        </tr>
+        <tr>
+            <td>Elegant dance</td>
+            <td>Waltz, Tango, Samba</td>
+          </tr>
+          <tr>
+            <td>Latin dance</td>
+            <td>Cha-Cha-Cha, Zumba</td>
+          </tr>
+          <tr>
+            <td>French/Russian dance</td>
+            <td>Ballet</td>
+          </tr>
+    </table>
+
+    <ul type="disc" class="center">
+        <li> Volleyball</li>
+        <li> Photography</li>
+        <li> Travelling</li>
+    </ul></p4> 
+
+        <hr>
+        <a name="Skill set:"><h2><li> <strong> <u>Skill set:</u></strong></li></h2></a>
+
+        <p id="demo8"></p>
+
+        <script>
+        const Skill_set = [ "Programming languages (C++, Java, MathLab, Quartus, R, HTML)",
+        "Microsoft Excel", "AutoCAD", "Playing violin"];
+
+        let text = "";
+        for (let i = 0; i < Skill_set.length; i++) {
+        text += Skill_set[i] + "<br>";
+        } 
+
+        document.getElementById("demo8").innerHTML = text;
+        </script> 
+
+        <!--
+    <p5> <ol class="center">
+        <li> Programming languages <br>
+            (C++, Java, MathLab, Quartus, R, HTML)</li>
+        <li> Microsoft Excel</li>
+        <li> AutoCAD</li>
+        <li> Playing violin</li>
+    </ol></p5>
+-->
+       
+<hr>
+<a name="Reach me:"><h2><li> <strong> <u>Reach me:</u> </strong></li></h2></a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+<div class="container">
+ 
+  <div class="panel panel-default">
+    <div class="panel-heading">Contact Information:</div>
+    <div class="panel-body"><p6>
+      Farah Foco, Hame Jabucice 27,71000 Sarajevo; <br>
+      Call/Text: <a href="tel:+38761007007">+38761007007;</a> <br>
+      <a href="mailto:farahf@gmail.com">Send me an e-mail!</a> <br>
+  </p6></div>
+  </div>
+</div>
+
+    </body>
+    
+</html>
